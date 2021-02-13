@@ -1,4 +1,3 @@
-#|
 require "date"
 class Todo  
     def initialize(text,due_date,completed)
