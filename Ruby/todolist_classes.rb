@@ -45,7 +45,12 @@ class TodosList
     end
 end
 date = Date.today
-todos = [  { text: "Submit assignment", due_date: date - 1, completed: false },  { text: "Pay rent", due_date: date, completed: true },  { text: "File taxes", due_date: date + 1, completed: false },  { text: "Call Acme Corp.", due_date: date + 1, completed: false },]
+todos = [  
+    { text: "Submit assignment", due_date: date - 1, completed: false },  
+    { text: "Pay rent", due_date: date, completed: true },  
+    { text: "File taxes", due_date: date + 1, completed: false },  
+    { text: "Call Acme Corp.", due_date: date + 1, completed: false },
+    ]
 todos = todos.map { |todo|
     Todo.new(todo[:text], todo[:due_date], todo[:completed])
 }
